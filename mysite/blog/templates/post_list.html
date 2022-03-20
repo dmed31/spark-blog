@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>Dhatri's Blog</h1>
+    <p>hiiiii welcome to the blog:)</p>
+    </body>
+    <body>
+        {% for post in posts %}
+        <div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>published: {{ post.published_date }}</p>
+            <p>{{ post.text }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
